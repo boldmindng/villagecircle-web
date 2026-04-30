@@ -74,7 +74,7 @@ export default async function RootLayout({
   return (
     <html lang="en" {...(portalAttr ? { "data-portal": portalAttr } : {})}>
       <head>
-        {/* Google AdSense — villagecircle.ng pub-1390336761729977 */}
+        <meta name="facebook-domain-verification" content="1w98v4hhm4dtreykrbddv5yog6wj5o" />
         <script
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1390336761729977"
