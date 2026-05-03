@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { PRICING_TIERS } from "@/lib/vibe-coders/pricing-config";
 import { CURRICULUM_MODULES } from "@/lib/vibe-coders/curriculum-data";
 import { CURRENT_COHORT } from "@/lib/vibe-coders/cohort-config";
@@ -60,7 +61,7 @@ export default function VibeCodersLanding() {
       <nav style={{ position: "fixed", top: 0, left: 0, right: 0, zIndex: 200, padding: "18px 40px", display: "flex", alignItems: "center", justifyContent: "space-between", backdropFilter: "blur(14px)", background: "rgba(10,11,7,0.85)", borderBottom: "1px solid rgba(237,232,220,0.06)" }}>
         <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
           <Link href="/" style={{ display: "flex", alignItems: "center", gap: 8, textDecoration: "none" }}>
-            <span style={{ fontSize: 18 }}>🌱</span>
+          <Image src="/logo.png" alt="VillageCircle" width={30} height={30} style={{ borderRadius: 6 }} />
             <span className="pf" style={{ color: "rgba(237,232,220,0.6)", fontWeight: 700, fontSize: 13 }}>VillageCircle</span>
           </Link>
           <span style={{ color: "rgba(237,232,220,0.2)", margin: "0 6px", fontSize: 12 }}>/</span>
