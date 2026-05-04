@@ -119,8 +119,10 @@ export default async function RootLayout({
       </head>
       <body>
           <ErrorBoundary>
-
-          <VillageCircleLayout>{children}</VillageCircleLayout>
+          <VillageCircleLayout>
+            {children}
+            
+        </VillageCircleLayout>
           <CookieConsent />
         </ErrorBoundary>
       </body>

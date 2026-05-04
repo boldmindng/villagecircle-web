@@ -2,6 +2,9 @@
   "name": "villagecircle-web",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
+
+
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -9,10 +12,10 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@boldmind-tech/api-client": "4.0.0",
-    "@boldmind-tech/auth": "4.0.0",
-    "@boldmind-tech/ui": "4.0.0",
-    "@boldmind-tech/utils": "4.0.0",
+    "@boldmind-tech/ui":         "5.0.1",
+    "@boldmind-tech/utils":      "4.1.1",
+    "@boldmind-tech/auth":       "5.0.1",
+    "@boldmind-tech/api-client": "5.0.1",
     "@vercel/analytics": "^2.0.1",
     "next": "^15.5.15",
     "react": "^19.0.0",
