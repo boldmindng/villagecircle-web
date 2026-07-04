@@ -1,11 +1,11 @@
 'use client';
 import { ReactNode } from 'react';
-import { ThemeProvider, FontProvider } from '@boldmind-tech/ui';
-import type { ProductThemeType } from '@boldmind-tech/ui';
+import { ThemeProvider, FontProvider } from '@boldmindng/ui';
+import type { ProductThemeType } from '@boldmindng/ui';
 
 const VILLAGECIRCLE_THEME: ProductThemeType = {
   slug: 'villagecircle',
-  name: 'VillageCircle',
+  name: 'VillageCircle NG',
   description: 'A venture studio and publishing imprint rooted in African sovereignty',
   icon: '🌍',
   status: 'LIVE',

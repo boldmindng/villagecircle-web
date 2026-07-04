@@ -22,7 +22,7 @@ import {
   type PaystackInit,
   type ApiResponse,
   type PaginatedResponse,
-} from '@boldmind-tech/api-client';
+} from '@boldmindng/api-client';
 
 // Configure base URL from env
 configure({

@@ -2,7 +2,7 @@ import type { Metadata, Viewport } from "next";
 import "./globals.css";
 import { headers } from "next/headers";
 import { VillageCircleLayout } from "./villagecircleLayout";
-import { ErrorBoundary, CookieConsent } from "@boldmind-tech/ui";
+import { ErrorBoundary, CookieConsent } from "@boldmindng/ui";
 
 
 export const viewport: Viewport = {
@@ -13,15 +13,15 @@ export const viewport: Viewport = {
 
 export const metadata: Metadata = {
   title: {
-    default: "VillageCircle — Where Conviction Becomes Code",
-    template: "%s | VillageCircle",
+    default: "VillageCircle NG — Where Conviction Becomes Code",
+    template: "%s | VillageCircle NG",
   },
   description:
     "Philosophy hub and concept incubator of the BoldMind ecosystem. Daily drops, the 5 Rivers doctrine, and tomorrow's products growing as stories before they become code.",
   metadataBase: new URL("https://villagecircle.ng"),
   applicationName: "VillageCircle",
-  authors: [{ name: "VillageCircle", url: "https://villagecircle.ng" }],
-  keywords: ["VillageCircle", "BoldMind", "Nigerian tech", "Vibe Coders", "conviction", "philosophy", "daily drops"],
+  authors: [{ name: "VillageCircle NG", url: "https://villagecircle.ng" }],
+  keywords: ["VillageCircle", "Boldmind", "Nigerian tech", "Vibe Coders", "conviction", "philosophy", "daily drops"],
   openGraph: {
     title: "VillageCircle — Where Conviction Becomes Code",
     description: "Philosophy hub and concept incubator of the BoldMind ecosystem. Daily drops at 8:30 AM.",
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "VillageCircle — Where Conviction Becomes Code",
+        alt: "VillageCircle NG — Where Conviction Becomes Code",
       },
     ],
   },

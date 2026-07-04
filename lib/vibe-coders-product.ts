@@ -6,7 +6,7 @@ export const VIBE_CODERS_PRODUCT = {
   category: "education" as const,
   status: "BUILDING" as const,
   pillar: "conviction" as const,
-  version: "0.1.0",
+  version: "1.1.1",
   slug: "vibecoders",
   domain: "villagecircle.ng" as const,
   routePath: "/vibecoders",
@@ -44,7 +44,7 @@ export const VIBE_CODERS_PRODUCT = {
     domain: "educenter.com.ng" as const,
     pillar: "education" as const,
   },
-  links: { website: "https://villagecircle.ng/vibecoders" },
+  links: { website: "https://villagecircle.ng/vibe-coders" },
   features: [
     "Structured 6-month arc: 2 months learning + 4 months building real products",
     "Psychology-informed two-step application: quick interest form → deep assessment after shortlisting",
