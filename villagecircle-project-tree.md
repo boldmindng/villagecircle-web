@@ -1,7 +1,7 @@
-
 ```
 villagecircle-web
 ├─ .npmrc
+├─ README.md
 ├─ app
 │  ├─ (vibe-coders)
 │  │  ├─ layout.tsx
@@ -21,9 +21,9 @@ villagecircle-web
 │  │     │  ├─ cohort
 │  │     │  │  └─ page.tsx
 │  │     │  ├─ curriculum
-│  │     │  │  ├─ page.tsx
-│  │     │  │  └─ [moduleId]
-│  │     │  │     └─ page.tsx
+│  │     │  │  ├─ [moduleId]
+│  │     │  │  │  └─ page.tsx
+│  │     │  │  └─ page.tsx
 │  │     │  ├─ layout.tsx
 │  │     │  ├─ login
 │  │     │  │  └─ page.tsx
@@ -33,9 +33,9 @@ villagecircle-web
 │  │     │  ├─ profile
 │  │     │  │  └─ page.tsx
 │  │     │  ├─ projects
-│  │     │  │  ├─ page.tsx
-│  │     │  │  └─ [projectId]
-│  │     │  │     └─ page.tsx
+│  │     │  │  ├─ [projectId]
+│  │     │  │  │  └─ page.tsx
+│  │     │  │  └─ page.tsx
 │  │     │  └─ settings
 │  │     │     └─ page.tsx
 │  │     ├─ pricing
@@ -46,7 +46,6 @@ villagecircle-web
 │  ├─ layout.tsx
 │  ├─ page.tsx
 │  └─ villagecircleLayout.tsx
-├─ boldmind-system-design-v2-alignment-addendum.md
 ├─ config
 │  ├─ concepts.ts
 │  ├─ fonts.ts
