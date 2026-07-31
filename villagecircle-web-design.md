@@ -157,3 +157,26 @@ Assessment questions (`/apply/assessment`) one-per-screen on mobile already suit
 | P2       | Accessibility check on serif+dyslexia interplay        | site-wide              | 1d                         | Frontend                    |
 
 **Separate, larger-scope item (not in this sprint plan):** building the actual daily-drops/concept-incubator experience described everywhere except the repo. That's a new-feature project, not a UX upgrade — flag to the founder as its own initiative once Vibe Coders UX work lands.
+
+### Frontend Design Docs — Addendum v1
+
+**Applies to:** `boldmind-web`, `planai-suite`, `amebogist-web`, `villagecircle-web` design docs.
+**Not applied here:** `educenter-web` — see the full v2 rewrite (`educenter-web-design-doc-v2.md`), which got the larger LMS/School Portal priority update.
+
+**Purpose of this addendum:** two things came out of reconciling the individual app docs against `boldmind-service-canonical.md` v1.3 and `boldmind-shared-monorepo-v1.1.md`: (1) a couple of route/module references had drifted or were left as open flags, and (2) none of the four docs below had an explicit "room for future pages" convention the way `/study-hub/*` implicitly has one in educenter — this addendum adds that pattern to each app, plus flags anything newly confirmed or newly gapped by the v1.3 service doc.
+
+---
+
+## villagecircle-web
+
+### Reconciliation against `boldmind-service-canonical.md` v1.3
+
+- No change to the VibeCoders-specific routes or the `/portal/login` open question — canonical v1.3 doesn't add new information there.
+- **New context relevant to this app's biggest flagged gap** (no daily-drops/concept-incubator pages exist despite being the pillar's core stated feature): canonical v1.3 confirms `WaitlistController` is live at `/villagecircle/{afrocopy-ai,anontruth-mic,power-alert}/*` — three specific concept waitlists are backed by a real endpoint today, out of the ~29 concept products this doc's scope note lists as unbuilt. If the concept-incubator work gets picked up, these three have a live backend to build against immediately, ahead of the other ~26 which don't.
+
+### Extensibility — reserving room for future pages
+
+- This is the app most likely to need genuinely new top-level routes going forward, since ~29 concept products are still unbuilt. Recommended convention once the concept-incubator ships: a single dynamic route `/concepts/[slug]` driven by `config/concepts.ts` (already present as data-layer-only per the original doc) rather than a hand-built folder per concept — this avoids 29 near-identical route folders and keeps new concepts addable by adding a `config/concepts.ts` entry, not a new page. The three `WaitlistController`-backed concepts above (`afrocopy-ai`, `anontruth-mic`, `power-alert`) are the natural first three to route through this pattern.
+- `/vibe-coders/*` and `/portal/*` are feature-complete route groups for the current single confirmed feature — no extensibility change needed there beyond what the original doc's component recommendations already cover.
+
+---
